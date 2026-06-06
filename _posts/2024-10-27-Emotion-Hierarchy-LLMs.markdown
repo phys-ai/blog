@@ -6,7 +6,7 @@ date:   2025-06-04
 categories: paper
 ---
 
-**Authors:** [Bo Zhao](https://b-zhao.github.io)\*, [Maya Okawa](https://scholar.google.com/citations?user=iLPSzB4AAAAJ)\*, [Eric J. Bigelow](https://scholar.google.com/citations?user=wpppofoAAAAJ&hl=en), [Rose Yu](https://roseyu.com), [Tomer D. Ullman](https://www.tomerullman.org), [Ekdeep Singh Lubana](https://ekdeepslubana.github.io), [Hidenori Tanaka](https://sites.google.com/view/htanaka/home)
+**Authors:** [Maya Okawa](https://scholar.google.com/citations?user=iLPSzB4AAAAJ)\*, [Bo Zhao](https://b-zhao.github.io)\*, [Eric J. Bigelow](https://scholar.google.com/citations?user=wpppofoAAAAJ&hl=en), [Rose Yu](https://roseyu.com), [Tomer D. Ullman](https://www.tomerullman.org), [Ekdeep Singh Lubana](https://ekdeepslubana.github.io), [Hidenori Tanaka](https://sites.google.com/view/htanaka/home)
 
 **Links:** [arXiv](https://arxiv.org),
 [GitHub](https://github.com/phys-ai/Emotion-Hierarchy-LLMs), [blog](https://phys-ai.github.io/blog/hierarchical-emotion-in-llm)
@@ -245,11 +245,10 @@ We hope to continue contributing to the understanding of how LLMs model emotions
 {% highlight ruby %}
 @article{zhao2025emergence,
   title={Emergence of Hierarchical Emotion Organization in Large Language Models},
-  author={Bo Zhao, Maya Okawa, Eric J. Bigelow, Rose Yu, Tomer Ullman, Ekdeep Singh Lubana, and Hidenori Tanaka},
+  author={Maya Okawa, Bo Zhao, Eric J. Bigelow, Rose Yu, Tomer Ullman, Ekdeep Singh Lubana, and Hidenori Tanaka},
   journal={arXiv preprint},
   year={2025}
 }
 {% endhighlight %}
-
 
 
