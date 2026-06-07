@@ -61,6 +61,9 @@ function drawTree(graphData) {
     var svg = d3.select("#chart0").append("svg")
         .attr("width", width0 + treeViewportMargin0.left + treeViewportMargin0.right)
         .attr("height", height0 + treeViewportMargin0.top + treeViewportMargin0.bottom)
+        .style("width", "100%")
+        .style("max-width", "100%")
+        .style("height", "auto")
         .attr("viewBox", [
             -treeViewportMargin0.left,
             -treeViewportMargin0.top,

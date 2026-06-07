@@ -65,6 +65,9 @@ function drawTree_p(graphData_p) {
     var svg_p = d3.select("#chart2").append("svg")
         .attr("width", width2 + treeViewportMargin2.left + treeViewportMargin2.right)
         .attr("height", height2 + treeViewportMargin2.top + treeViewportMargin2.bottom)
+        .style("width", "100%")
+        .style("max-width", "100%")
+        .style("height", "auto")
         .attr("viewBox", [
             -treeViewportMargin2.left,
             -treeViewportMargin2.top,
