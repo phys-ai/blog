@@ -212,6 +212,23 @@ body {
   color: var(--poi-warm);
 }
 
+.article-hero-art {
+  margin: 1.35rem 0 2.4rem;
+}
+
+.article-hero-art img {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  border-color: color-mix(in srgb, var(--poi-rule) 78%, transparent);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.58), rgba(223, 236, 246, 0.52));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.46),
+    0 20px 70px -58px rgba(10, 30, 55, 0.75);
+  opacity: 0.94;
+}
+
 .takeaway-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
