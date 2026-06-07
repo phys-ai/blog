@@ -225,35 +225,168 @@ body {
   color: var(--poi-warm);
 }
 
-.takeaway-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.9rem;
-  margin: 1.8rem 0 3rem;
-}
-
-.takeaway-grid div {
-  min-height: 7.25rem;
-  padding: 1rem;
+.visual-summary {
+  margin: 2rem 0 3.4rem;
+  padding: clamp(1rem, 2vw, 1.35rem);
   border: 1px solid var(--poi-rule);
   border-radius: 8px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.56), rgba(218, 233, 243, 0.62));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.58), rgba(222, 236, 246, 0.54)),
+    radial-gradient(circle at 86% 10%, rgba(178, 116, 37, 0.08), transparent 18rem);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.58),
+    0 24px 74px -62px rgba(10, 30, 55, 0.72);
 }
 
-.takeaway-grid span {
-  color: var(--poi-warm);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
+.visual-summary-header {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.25fr) 1fr;
+  gap: 1rem;
+  align-items: end;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--poi-rule);
 }
 
-.takeaway-grid p {
-  margin: 0.78rem 0 0;
+.visual-summary-header .article-kicker {
+  margin: 0;
+}
+
+.visual-summary h2 {
+  margin: 0;
   color: var(--poi-ink);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.08rem;
-  line-height: 1.28;
+  font-size: clamp(1.45rem, 2.8vw, 2.35rem);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.visual-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.visual-card {
+  min-height: 20rem;
+  padding: 0.9rem;
+  border: 1px solid color-mix(in srgb, var(--poi-rule) 76%, transparent);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.62), rgba(230, 241, 248, 0.62));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.62);
+}
+
+.visual-card-art {
+  display: grid;
+  place-items: center;
+  height: 9.4rem;
+  margin-bottom: 0.9rem;
+  border-radius: 7px;
+  background:
+    radial-gradient(circle at 74% 18%, rgba(178, 116, 37, 0.1), transparent 11rem),
+    linear-gradient(145deg, rgba(233, 243, 249, 0.82), rgba(250, 252, 253, 0.68));
+  overflow: hidden;
+}
+
+.visual-card-art svg {
+  width: 100%;
+  max-width: 15.8rem;
+  height: 100%;
+}
+
+.visual-line {
+  fill: none;
+  stroke: rgba(23, 79, 131, 0.56);
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+.visual-line-soft {
+  stroke: rgba(93, 123, 146, 0.34);
+  stroke-width: 1.4;
+}
+
+.visual-node {
+  stroke: rgba(7, 22, 38, 0.12);
+  stroke-width: 1;
+}
+
+.visual-blue {
+  fill: rgba(23, 79, 131, 0.72);
+}
+
+.visual-teal {
+  fill: rgba(71, 146, 144, 0.62);
+}
+
+.visual-coral {
+  fill: rgba(204, 117, 94, 0.66);
+}
+
+.visual-warm {
+  fill: rgba(178, 116, 37, 0.66);
+}
+
+.visual-ring {
+  fill: rgba(255, 255, 255, 0.24);
+  stroke: rgba(23, 79, 131, 0.24);
+  stroke-width: 1.4;
+}
+
+.visual-dot {
+  fill: rgba(109, 130, 154, 0.48);
+}
+
+.visual-arrow {
+  fill: none;
+  stroke: rgba(178, 116, 37, 0.72);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.2;
+}
+
+.visual-block {
+  fill: rgba(255, 255, 255, 0.42);
+  stroke: rgba(23, 79, 131, 0.2);
+  stroke-width: 1;
+}
+
+.visual-card-kicker {
+  margin: 0;
+  color: var(--poi-warm);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.visual-card h3 {
+  margin: 0.5rem 0 0;
+  color: var(--poi-ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.23rem;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+.visual-card p:last-child {
+  margin: 0.65rem 0 0;
+  color: var(--poi-ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.52;
+}
+
+.visual-summary-note {
+  margin: 1rem 0 0;
+  padding: 0.95rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--poi-rule) 68%, transparent);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.42);
+  color: var(--poi-ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.58;
 }
 
 .emotion-article img {
@@ -418,11 +551,16 @@ path.chord {
     grid-template-columns: 1fr;
   }
 
-  .takeaway-grid {
+  .visual-summary-header {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+
+  .visual-summary-grid {
     grid-template-columns: 1fr;
   }
 
-  .takeaway-grid div {
+  .visual-card {
     min-height: auto;
   }
 
