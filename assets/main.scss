@@ -1,0 +1,30 @@
+---
+---
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&display=swap");
+@import "minima";
+
+.site-title,
+.site-title:visited {
+  color: #071626;
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 1.0625rem;
+  font-weight: 450;
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+
+.site-header {
+  min-height: 0;
+}
+
+.site-header .wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 4rem;
+}
+
+.site-nav {
+  margin-left: auto;
+  line-height: 1.2;
+}

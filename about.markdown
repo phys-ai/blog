@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Welcome to the Physics of Intelligence Lab Blogs! Our blog posts contain technical (yet accessible) introduction to our recent work and ideas.
+Welcome to the Physics of Intelligence Group Blog! Our blog posts contain technical (yet accessible) introduction to our recent work and ideas.
