@@ -14,6 +14,7 @@ treeDatas.forEach(function(treeData, index0) {
 
 var width0 = 1000;
 var height0 = 350;
+var treeViewportMargin0 = { top: 62, right: 145, bottom: 78, left: 120 };
 
 var currentIndex = 0;
 d3.select("#chart0").selectAll("*").remove();
@@ -58,8 +59,14 @@ function drawTree(graphData) {
     });
 
     var svg = d3.select("#chart0").append("svg")
-        .attr("width", width0)
-        .attr("height", height0);
+        .attr("width", width0 + treeViewportMargin0.left + treeViewportMargin0.right)
+        .attr("height", height0 + treeViewportMargin0.top + treeViewportMargin0.bottom)
+        .attr("viewBox", [
+            -treeViewportMargin0.left,
+            -treeViewportMargin0.top,
+            width0 + treeViewportMargin0.left + treeViewportMargin0.right,
+            height0 + treeViewportMargin0.top + treeViewportMargin0.bottom
+        ].join(" "));
 
     /*
     // Center of the SVG
@@ -149,5 +156,3 @@ function drawTree(graphData) {
 
     setTimeout(animateGraph, 1000);
 }
-
-

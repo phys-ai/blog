@@ -19,6 +19,7 @@ treeDatas_persona.forEach(function(treeData_persona, index2) {
 
 var width2 = 1300;
 var height2 = 400;
+var treeViewportMargin2 = { top: 66, right: 155, bottom: 82, left: 130 };
 
 var currentIndex_persona = 0;
 d3.select("#chart2").selectAll("*").remove();
@@ -62,8 +63,14 @@ function drawTree_p(graphData_p) {
     });
 
     var svg_p = d3.select("#chart2").append("svg")
-        .attr("width", width2)
-        .attr("height", height2);
+        .attr("width", width2 + treeViewportMargin2.left + treeViewportMargin2.right)
+        .attr("height", height2 + treeViewportMargin2.top + treeViewportMargin2.bottom)
+        .attr("viewBox", [
+            -treeViewportMargin2.left,
+            -treeViewportMargin2.top,
+            width2 + treeViewportMargin2.left + treeViewportMargin2.right,
+            height2 + treeViewportMargin2.top + treeViewportMargin2.bottom
+        ].join(" "));
 
     /*
     // Center of the SVG
@@ -151,5 +158,3 @@ function drawTree_p(graphData_p) {
 
     setTimeout(animateGraph, 1000);
 }
-
-
