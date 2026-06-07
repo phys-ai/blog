@@ -28,10 +28,6 @@ As conversational AI agents become more common, we need a sharper account of how
   <a href="https://phys-ai.github.io/blog/hierarchical-emotion-in-llm">Blog</a>
 </div>
 
-<figure class="article-hero-art">
-  <img src="{{ site.baseurl }}/assets/Emotion-Hierarchy-LLMs/emotion-hierarchy-tree-watercolor.jpg" alt="A watercolor illustration of an abstract emotion hierarchy tree." loading="eager">
-</figure>
-
 <div class="takeaway-grid">
   <div>
     <span>01</span>
