@@ -66,36 +66,47 @@ body {
   position: relative;
   max-width: 64rem;
   margin: 0 auto 1.6rem;
-  padding: clamp(1.35rem, 2.45vw, 2.05rem);
+  min-height: clamp(18rem, 35vw, 25.5rem);
+  padding: clamp(1.7rem, 4vw, 3.1rem);
   overflow: hidden;
   border: 1px solid var(--poi-rule);
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background:
-    linear-gradient(90deg, rgba(247, 251, 253, 0.94) 0%, rgba(247, 251, 253, 0.88) 42%, rgba(232, 244, 251, 0.52) 72%, rgba(232, 244, 251, 0.34) 100%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(223, 236, 246, 0.22)),
-    url("emotion-hierarchy-tree-watercolor.jpg") right center / cover no-repeat,
-    radial-gradient(circle at 80% 10%, rgba(178, 116, 37, 0.14), transparent 16rem);
-  box-shadow: 0 24px 80px -62px rgba(10, 30, 55, 0.7);
+    linear-gradient(180deg, rgba(238, 246, 251, 0.72), rgba(228, 239, 246, 0.86));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.58),
+    0 24px 80px -62px rgba(10, 30, 55, 0.7);
+}
+
+.post-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    url("emotion-hierarchy-tree-watercolor.jpg") 58% 47% / cover no-repeat;
+  opacity: 0.84;
 }
 
 .post-header::after {
   content: "";
   position: absolute;
-  inset: auto -8% -42% 48%;
-  height: 70%;
+  inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(circle, rgba(23, 79, 131, 0.16) 1.5px, transparent 2px),
-    linear-gradient(120deg, transparent, rgba(23, 79, 131, 0.14), transparent);
-  background-size: 2rem 2rem, 100% 100%;
-  opacity: 0.34;
-  mask-image: linear-gradient(90deg, transparent, #000 35%, transparent);
+    linear-gradient(90deg, rgba(239, 247, 252, 0.88) 0%, rgba(239, 247, 252, 0.64) 37%, rgba(239, 247, 252, 0.2) 68%, rgba(239, 247, 252, 0.06) 100%),
+    linear-gradient(180deg, rgba(239, 247, 252, 0.06) 0%, rgba(239, 247, 252, 0.18) 54%, rgba(239, 247, 252, 0.78) 100%),
+    radial-gradient(circle at 22% 83%, rgba(255, 255, 255, 0.78), transparent 18rem);
+  opacity: 0.96;
 }
 
 .post-title {
   position: relative;
-  z-index: 1;
-  max-width: 42rem;
+  z-index: 2;
+  max-width: 48rem;
   margin: 0;
   color: var(--poi-ink);
   font-family: Georgia, "Times New Roman", serif;
@@ -106,7 +117,7 @@ body {
 
 .post-meta {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin-top: 0.9rem;
   color: var(--poi-ink-muted);
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
