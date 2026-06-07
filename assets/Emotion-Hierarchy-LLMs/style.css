@@ -447,6 +447,7 @@ body {
 }
 
 .chart-panel {
+  box-sizing: border-box;
   width: 100%;
   margin: 0.75rem auto 2.35rem;
   overflow-x: auto;
@@ -485,8 +486,16 @@ body {
 }
 
 #chart0 svg,
-#chart1 svg,
 #chart2 svg {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-width: 0;
+  margin: 0 auto;
+}
+
+#chart1 svg {
   display: block;
   min-width: max-content;
   margin: 0 auto;
