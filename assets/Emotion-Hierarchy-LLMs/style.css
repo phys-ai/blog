@@ -27,22 +27,46 @@ body {
 .site-title,
 .site-title:visited {
   color: var(--poi-ink);
+  font-size: clamp(1.12rem, 1.9vw, 1.55rem);
+  font-weight: 520;
+  line-height: 1.2;
   letter-spacing: 0;
 }
 
+.site-header {
+  min-height: 0;
+}
+
+.site-header .wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 3.25rem;
+}
+
+.site-nav {
+  margin-left: auto;
+  line-height: 1.2;
+}
+
+.site-nav .page-link {
+  color: var(--poi-ink);
+  font-size: 0.96rem;
+}
+
 .page-content {
-  padding-top: 2.2rem;
+  padding-top: 1.5rem;
 }
 
 .post {
-  max-width: 70rem;
+  max-width: 72rem;
   margin: 0 auto;
 }
 
 .post-header {
   position: relative;
-  margin-bottom: 1.75rem;
-  padding: clamp(2rem, 4vw, 3.6rem);
+  max-width: 58rem;
+  margin: 0 auto 1.6rem;
+  padding: clamp(1.35rem, 2.45vw, 2.05rem);
   overflow: hidden;
   border: 1px solid var(--poi-rule);
   border-radius: 8px;
@@ -55,33 +79,33 @@ body {
 .post-header::after {
   content: "";
   position: absolute;
-  inset: auto -8% -34% 38%;
-  height: 72%;
+  inset: auto -8% -42% 48%;
+  height: 70%;
   pointer-events: none;
   background:
     radial-gradient(circle, rgba(23, 79, 131, 0.16) 1.5px, transparent 2px),
     linear-gradient(120deg, transparent, rgba(23, 79, 131, 0.14), transparent);
   background-size: 2rem 2rem, 100% 100%;
-  opacity: 0.5;
+  opacity: 0.34;
   mask-image: linear-gradient(90deg, transparent, #000 35%, transparent);
 }
 
 .post-title {
   position: relative;
   z-index: 1;
-  max-width: 54rem;
+  max-width: 42rem;
   margin: 0;
   color: var(--poi-ink);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.55rem, 5.5vw, 5.25rem);
-  line-height: 0.96;
+  font-size: clamp(1.85rem, 3vw, 3.18rem);
+  line-height: 1.06;
   letter-spacing: 0;
 }
 
 .post-meta {
   position: relative;
   z-index: 1;
-  margin-top: 1.35rem;
+  margin-top: 0.9rem;
   color: var(--poi-ink-muted);
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 0.72rem;
@@ -91,12 +115,12 @@ body {
 
 .post-content {
   color: var(--poi-ink-soft);
-  font-size: 1.05rem;
-  line-height: 1.72;
+  font-size: 1.03rem;
+  line-height: 1.74;
 }
 
 .post-content h2 {
-  margin-top: 4rem;
+  margin-top: 3.2rem;
   margin-bottom: 1rem;
   color: var(--poi-ink);
   font-family: Georgia, "Times New Roman", serif;
@@ -118,7 +142,7 @@ body {
 }
 
 .emotion-article {
-  max-width: 64rem;
+  max-width: 58rem;
   margin: 0 auto;
 }
 
@@ -133,10 +157,10 @@ body {
 }
 
 .emotion-article .article-lede {
-  max-width: 56rem;
+  max-width: 48rem;
   color: var(--poi-ink);
-  font-size: clamp(1.2rem, 2vw, 1.55rem);
-  line-height: 1.55;
+  font-size: clamp(1.06rem, 1.35vw, 1.24rem);
+  line-height: 1.66;
 }
 
 .article-meta {
@@ -192,12 +216,12 @@ body {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.9rem;
-  margin: 2rem 0 3.2rem;
+  margin: 1.8rem 0 3rem;
 }
 
 .takeaway-grid div {
-  min-height: 8.5rem;
-  padding: 1.15rem;
+  min-height: 7.25rem;
+  padding: 1rem;
   border: 1px solid var(--poi-rule);
   border-radius: 8px;
   background:
@@ -212,22 +236,22 @@ body {
 }
 
 .takeaway-grid p {
-  margin: 1rem 0 0;
+  margin: 0.78rem 0 0;
   color: var(--poi-ink);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.23rem;
-  line-height: 1.22;
+  font-size: 1.08rem;
+  line-height: 1.28;
 }
 
 .emotion-article img {
   display: block;
-  max-width: 100%;
+  max-width: min(100%, 54rem);
   height: auto;
-  margin: 1.7rem auto 2.4rem;
+  margin: 1.45rem auto 2.25rem;
   border: 1px solid var(--poi-rule);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 22px 70px -58px rgba(10, 30, 55, 0.75);
+  box-shadow: 0 18px 60px -50px rgba(10, 30, 55, 0.72);
 }
 
 .emotion-article p > img,
@@ -239,7 +263,7 @@ body {
   display: inline-block;
   position: relative;
   width: min(100%, 16rem);
-  margin: 0.4rem 0 1rem;
+  margin: 0.55rem 0 0.85rem;
 }
 
 .custom-select {
@@ -278,21 +302,40 @@ body {
 
 .chart-panel {
   width: 100%;
-  margin: 0.75rem 0 2.4rem;
+  margin: 0.75rem auto 2.35rem;
   overflow-x: auto;
   overflow-y: hidden;
   border: 1px solid var(--poi-rule);
   border-radius: 8px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.66), rgba(224, 238, 247, 0.56)),
-    radial-gradient(circle at 80% 16%, rgba(178, 116, 37, 0.11), transparent 20rem);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(226, 239, 247, 0.62)),
+    radial-gradient(circle at 84% 12%, rgba(178, 116, 37, 0.09), transparent 18rem);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.62),
+    0 18px 60px -54px rgba(10, 30, 55, 0.7);
+  scrollbar-color: color-mix(in srgb, var(--poi-blue-soft) 72%, var(--poi-blue) 28%) transparent;
+  scrollbar-width: thin;
+}
+
+.chart-panel::-webkit-scrollbar {
+  height: 10px;
+}
+
+.chart-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chart-panel::-webkit-scrollbar-thumb {
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-clip: content-box;
+  background-color: color-mix(in srgb, var(--poi-blue-soft) 78%, var(--poi-blue) 22%);
 }
 
 #chart0,
 #chart1,
 #chart2 {
-  padding: 1rem;
+  padding: clamp(0.8rem, 2vw, 1.25rem);
 }
 
 #chart0 svg,
@@ -300,6 +343,7 @@ body {
 #chart2 svg {
   display: block;
   min-width: max-content;
+  margin: 0 auto;
 }
 
 .node circle {
@@ -344,8 +388,17 @@ path.chord {
 }
 
 @media (max-width: 720px) {
+  .site-header .wrapper {
+    min-height: 3rem;
+  }
+
   .post-header {
-    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+    padding: 1.2rem;
+  }
+
+  .post-title {
+    font-size: clamp(1.9rem, 9vw, 2.65rem);
   }
 
   .article-meta {
