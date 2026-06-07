@@ -257,8 +257,8 @@ body {
   margin: 0;
   color: var(--poi-ink);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.45rem, 2.8vw, 2.35rem);
-  line-height: 1.08;
+  font-size: clamp(1.35rem, 2vw, 1.95rem);
+  line-height: 1.12;
   letter-spacing: 0;
 }
 
@@ -269,88 +269,29 @@ body {
 }
 
 .visual-card {
-  min-height: 20rem;
-  padding: 0.9rem;
+  position: relative;
+  min-height: 12.5rem;
+  padding: 1rem;
   border: 1px solid color-mix(in srgb, var(--poi-rule) 76%, transparent);
   border-radius: 8px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.62), rgba(230, 241, 248, 0.62));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.66), rgba(230, 241, 248, 0.64));
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.62);
 }
 
-.visual-card-art {
-  display: grid;
-  place-items: center;
-  height: 9.4rem;
-  margin-bottom: 0.9rem;
-  border-radius: 7px;
+.visual-card::before {
+  content: "";
+  display: block;
+  width: 2.15rem;
+  height: 2.15rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(23, 79, 131, 0.22);
+  border-radius: 999px;
   background:
-    radial-gradient(circle at 74% 18%, rgba(178, 116, 37, 0.1), transparent 11rem),
-    linear-gradient(145deg, rgba(233, 243, 249, 0.82), rgba(250, 252, 253, 0.68));
-  overflow: hidden;
-}
-
-.visual-card-art svg {
-  width: 100%;
-  max-width: 15.8rem;
-  height: 100%;
-}
-
-.visual-line {
-  fill: none;
-  stroke: rgba(23, 79, 131, 0.56);
-  stroke-linecap: round;
-  stroke-width: 2;
-}
-
-.visual-line-soft {
-  stroke: rgba(93, 123, 146, 0.34);
-  stroke-width: 1.4;
-}
-
-.visual-node {
-  stroke: rgba(7, 22, 38, 0.12);
-  stroke-width: 1;
-}
-
-.visual-blue {
-  fill: rgba(23, 79, 131, 0.72);
-}
-
-.visual-teal {
-  fill: rgba(71, 146, 144, 0.62);
-}
-
-.visual-coral {
-  fill: rgba(204, 117, 94, 0.66);
-}
-
-.visual-warm {
-  fill: rgba(178, 116, 37, 0.66);
-}
-
-.visual-ring {
-  fill: rgba(255, 255, 255, 0.24);
-  stroke: rgba(23, 79, 131, 0.24);
-  stroke-width: 1.4;
-}
-
-.visual-dot {
-  fill: rgba(109, 130, 154, 0.48);
-}
-
-.visual-arrow {
-  fill: none;
-  stroke: rgba(178, 116, 37, 0.72);
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2.2;
-}
-
-.visual-block {
-  fill: rgba(255, 255, 255, 0.42);
-  stroke: rgba(23, 79, 131, 0.2);
-  stroke-width: 1;
+    radial-gradient(circle at 68% 31%, rgba(178, 116, 37, 0.72) 0 0.24rem, transparent 0.26rem),
+    radial-gradient(circle at 35% 64%, rgba(23, 79, 131, 0.74) 0 0.34rem, transparent 0.36rem),
+    radial-gradient(circle at 61% 68%, rgba(71, 146, 144, 0.64) 0 0.24rem, transparent 0.26rem),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.58), rgba(219, 235, 245, 0.68));
 }
 
 .visual-card-kicker {

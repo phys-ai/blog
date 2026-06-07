@@ -6,7 +6,7 @@ date:   2025-06-04
 categories: paper
 ---
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/Emotion-Hierarchy-LLMs/style.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/Emotion-Hierarchy-LLMs/style.css?v=20260607-2">
 <script src="https://d3js.org/d3.v3.min.js"></script>
 
 <div class="emotion-article" markdown="1">
@@ -36,58 +36,18 @@ As conversational AI agents become more common, we need a sharper account of how
 
   <div class="visual-summary-grid">
     <article class="visual-card">
-      <div class="visual-card-art" aria-hidden="true">
-        <svg viewBox="0 0 260 150" role="img">
-          <path class="visual-line" d="M40 118 C70 88 92 72 122 54 C150 37 177 26 222 18" />
-          <path class="visual-line visual-line-soft" d="M122 54 C108 44 94 35 77 26" />
-          <path class="visual-line visual-line-soft" d="M122 54 C135 72 148 84 168 96" />
-          <path class="visual-line visual-line-soft" d="M168 96 C187 89 204 84 224 78" />
-          <circle class="visual-node visual-blue" cx="40" cy="118" r="8" />
-          <circle class="visual-node visual-blue" cx="122" cy="54" r="11" />
-          <circle class="visual-node visual-teal" cx="77" cy="26" r="8" />
-          <circle class="visual-node visual-coral" cx="168" cy="96" r="9" />
-          <circle class="visual-node visual-warm" cx="222" cy="18" r="7" />
-          <circle class="visual-node visual-blue" cx="224" cy="78" r="6" />
-        </svg>
-      </div>
       <p class="visual-card-kicker">01 · Structure</p>
       <h3>Emotion words organize into trees.</h3>
       <p>Across generated emotional scenarios, conditional relationships among words reveal branching hierarchies rather than a flat list of labels.</p>
     </article>
 
     <article class="visual-card">
-      <div class="visual-card-art" aria-hidden="true">
-        <svg viewBox="0 0 260 150" role="img">
-          <circle class="visual-ring" cx="80" cy="74" r="38" />
-          <circle class="visual-ring" cx="172" cy="74" r="38" />
-          <path class="visual-line" d="M118 74 C132 62 148 62 162 74" />
-          <path class="visual-line visual-line-soft" d="M118 74 C132 88 148 88 162 74" />
-          <circle class="visual-node visual-coral" cx="80" cy="74" r="13" />
-          <circle class="visual-node visual-teal" cx="172" cy="74" r="13" />
-          <circle class="visual-dot" cx="54" cy="48" r="4" />
-          <circle class="visual-dot" cx="106" cy="104" r="4" />
-          <circle class="visual-dot" cx="146" cy="48" r="4" />
-          <circle class="visual-dot" cx="199" cy="103" r="4" />
-        </svg>
-      </div>
       <p class="visual-card-kicker">02 · Personas</p>
       <h3>Assumptions reshape recognition.</h3>
       <p>When the same model is asked to assume different personas, its emotion predictions and emotion trees shift in systematic ways.</p>
     </article>
 
     <article class="visual-card">
-      <div class="visual-card-art" aria-hidden="true">
-        <svg viewBox="0 0 260 150" role="img">
-          <path class="visual-line visual-line-soft" d="M38 104 C82 42 126 125 170 62 C190 34 210 30 232 28" />
-          <path class="visual-line" d="M42 116 C88 98 119 78 148 58 C176 38 202 24 228 18" />
-          <circle class="visual-node visual-blue" cx="42" cy="116" r="8" />
-          <circle class="visual-node visual-teal" cx="148" cy="58" r="11" />
-          <circle class="visual-node visual-warm" cx="228" cy="18" r="8" />
-          <path class="visual-arrow" d="M212 21 L229 18 L220 33" />
-          <rect class="visual-block" x="49" y="46" width="44" height="30" rx="7" />
-          <rect class="visual-block" x="168" y="88" width="44" height="30" rx="7" />
-        </svg>
-      </div>
       <p class="visual-card-kicker">03 · Behavior</p>
       <h3>Prediction can become influence.</h3>
       <p>In negotiation simulations, better emotion prediction correlates with stronger ability to steer the interaction toward a desired outcome.</p>
